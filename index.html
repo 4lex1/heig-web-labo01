@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>MFC</title>
+</head>
+
+<body>  
+
+    <div class="gameResult hidden" id="gameResult">
+        <h1 class="gameResultText hidden" id="gameResultText"></h1>
+    </div>
+
+    <div class="container">
+        <div class="main">
+            <div class="top">
+                <h1>MALO'S FAN CLUB</h1>
+                <h2>Bienvenue sur le site officiel du fan club de Malo.</h2>
+            </div>
+            <h3 class="love" id="banner"></h3>
+            <p>Ce site est un lieu de rassemblement pour tous les adorateurs de Malo Romano le
+                bg.</p>
+            <a href="https://ch.linkedin.com/in/malo-romano-b83255162">En savoir plus sur <i>Malo</i> <b>Romano</b></a>
+
+            <hr />
+            <h2>Présentation de Malo</h2>
+            <img class="malo" src="images/malo.jpg" width="600"
+                alt="Image de Malo, il est très beau et a un grain de beauté sur la joue">
+            <p>
+                <u>Malo</u> est hyper sympa. Ca serait vraiment gentil de votre part de lui mettre des bonnes notes.
+                Il est vrai que <u>Malo</u> n'est pas l'étudiant le plus assidu de la HEIG-VD. Cependant, il faut
+                reconnaître qu'il est très gentil et parfois serviable.
+            </p>
+
+            <hr />
+            <h2>Envoyer de l'amour à Malo</h2>
+            <p>Appuyez sur le bouton pour envoyer de l'amour à Malo</p>
+            <button class="loveButton" onclick="onButtonClick()">Envoyer de l'amour</button>
+            <p>Amour pour Malo: <span id='loveCount'>0</span> <span class="love" id="loveSize">❤</span></p>
+
+            <hr/>
+            <h2>Le petit jeu des habits de Malo</h2>
+            <p>Malo a une garde robe très particulière. Saurez-vous retrouver son outfit préféré parmis les suivants ?</p>
+
+            <div class="outfit-grid">
+                <img id="outfit1" class="outfit-image" src="images/outfit1.png" alt="Habits clairs">
+                <img id="outfit2" class="outfit-image" src="images/outfit2.png" alt="Habits foncés">
+                <img id="outfit3" class="outfit-image" src="images/outfit3.png" alt="Habits costume de clown">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+</body>
+
+</html>

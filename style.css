@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+}
+
+.malo{
+    border: 2px solid black;
+}
+
+.loveButton{
+    background-color: blue;
+    font-weight: bold;
+    color:yellow;
+    margin: auto;
+}
+
+.love{
+    color:red;
+}
+
+.container{
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+.main{
+    width:60%;
+    background-color:gainsboro;
+}
+
+.top{
+    background-image: url("images/malo.jpg");
+    color:white;
+    text-shadow: 1px 1px 3px black;
+    height: 300px;
+    padding: 25px;
+    text-align: left;
+}
+
+.outfit-grid{
+    grid-template-columns: 1fr 50px 1fr 1fr;
+}
+
+.outfit-image{
+    width:200px;
+    height:300px;
+    margin: 30px 20px 100px 20px;
+    border: 3px solid black;
+    transition-duration: 500ms;
+    cursor:pointer;
+    z-index: 20;
+}
+
+.outfit-image:hover{
+    transform: scale(1.2);
+    border: 2px solid yellow;
+    box-shadow: 0px 0px 20px yellow;
+}
+
+
+.gameResultText{
+    transition-duration: 800ms;
+    z-index:10;
+}
+
+.gameResult{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 15% 0 0 0;
+    transition-duration: 400ms;
+    color:white;
+    text-align: center;
+    pointer-events: none;
+    z-index:10;
+}
+
+.hidden{
+    opacity: 0;
+}
